@@ -1,0 +1,40 @@
+.productPage {
+
+  width: max-content;
+  margin: 27px auto 69px auto;
+
+  display: grid;
+  grid-template-rows: max-content max-content 1fr max-content;
+  justify-content: center;
+  align-items: start;
+
+  & .head {
+    grid-area: 1 / 1 / 2 / 3;
+    align-self: center;
+
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-bottom: 20px;
+
+    & .backButton {}
+
+    & .productName {}
+  }
+
+  & .productView {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: end;
+  }
+
+  & .productDescription {
+    grid-area: 2 / 2 / 4 / 3;
+  }
+
+  & .recommendations {
+    grid-area: 3 / 1 / 4 / 2;
+    align-self: start;
+    justify-self: end;
+  }
+}
+
