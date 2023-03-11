@@ -1,0 +1,30 @@
+.rightBottomLabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 96.54%;
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  user-select: none;
+
+  & .decorationImg {}
+
+  & .mainPart {
+    background-color: #8B123B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8.96px 7.96px;
+  }
+
+
+}

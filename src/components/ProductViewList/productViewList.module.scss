@@ -1,0 +1,24 @@
+.productViewList {
+  width: 563px;
+  height: 681px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  & .button {
+
+  }
+
+  & .item {
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
