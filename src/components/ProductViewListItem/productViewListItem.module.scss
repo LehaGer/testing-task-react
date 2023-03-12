@@ -4,6 +4,8 @@
   margin: 19px 0;
   position: relative;
 
+  overflow: hidden;
+
   display: block;
 
   cursor: pointer;
@@ -63,6 +65,8 @@
     top: 0;
     bottom: 0;
     right: 0;
+    width: 97px;
+    height: 144px;
   }
 
 

@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import productCardReducer from './reducers/productCardSlice';
+import currentImageReducer from './reducers/currentImageSlice';
 
 const rootReducer = combineReducers({
   productCardReducer,
+  currentImageReducer,
 });
 
 export const setupStore = () => {

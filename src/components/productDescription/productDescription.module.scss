@@ -1,5 +1,25 @@
 .productDescription {
   width: 583px;
   height: 1401px;
-  background-color: #b0aba5;
+  //border: #b0aba5 1px dashed;
+  position: relative;
+
+  & .salesStats {
+    position: relative;
+    width: max-content;
+    left: 0;
+    top: 0;
+  }
+
+  & .goToButtonsWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0;
+  }
+
+  & .goToVideoBtn,
+  & .goToCommentBtn {
+    position: relative;
+    margin-right: 20px;
+  }
 }

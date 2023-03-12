@@ -15,5 +15,10 @@
   &:hover {
     opacity: .5;
   }
+
+  &.inactive {
+    opacity: .5;
+    cursor: auto;
+  }
 }
 

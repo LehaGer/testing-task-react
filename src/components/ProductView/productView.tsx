@@ -1,22 +1,32 @@
 import React, { FC } from 'react';
 import ProductViewStyles from './productView.module.scss';
 import ProductViewList from '../ProductViewList/productViewList';
-import mainPreview from 'assets/photos/main-previw.png';
 import shareBtnImg from 'assets/share.svg';
 import likeBtnImg from 'assets/like.svg';
 import downloadBtnImg from 'assets/downloadsvg.svg';
 import RightBottomLabel from '../UI/RightBottomLabel/RightBottomLabel';
+import { IProductInfo } from '../../types';
+import { useAppSelector } from '../../hooks/redux';
 
 interface IProductNameView {
+  data: Pick<IProductInfo, 'photos' | 'videos' | 'isNew' | 'promocode'>;
   className?: string;
 }
 
-const ProductView: FC<IProductNameView> = ({ className }) => {
+const ProductView: FC<IProductNameView> = ({ className, data }) => {
+  const { photos, videos, isNew, promocode } = data;
+  const currentImage = useAppSelector((state) => state.currentImageReducer);
+
   return (
     <div className={`${ProductViewStyles.productView} ${className}`}>
-      <ProductViewList className={ProductViewStyles.list}></ProductViewList>
+      <ProductViewList data={{ photos, videos }} className={ProductViewStyles.list} />
       <div className={ProductViewStyles.current}>
-        <img className={ProductViewStyles.img} src={mainPreview} alt={''} draggable={false} />
+        <img
+          className={ProductViewStyles.img}
+          src={currentImage.url ?? undefined}
+          alt={'current image'}
+          draggable={false}
+        />
         <img className={ProductViewStyles.likeBtn} src={likeBtnImg} alt={''} draggable={false} />
         <img className={ProductViewStyles.shareBtn} src={shareBtnImg} alt={''} draggable={false} />
         <img
@@ -25,8 +35,10 @@ const ProductView: FC<IProductNameView> = ({ className }) => {
           alt={''}
           draggable={false}
         />
-        <div className={ProductViewStyles.topLeftMark}>NEW</div>
-        <RightBottomLabel className={ProductViewStyles.bottomRightMark}>#вклад</RightBottomLabel>
+        {isNew ? <div className={ProductViewStyles.topLeftMark}>NEW</div> : null}
+        <RightBottomLabel className={ProductViewStyles.bottomRightMark}>
+          {`${promocode.title}`}
+        </RightBottomLabel>
       </div>
     </div>
   );

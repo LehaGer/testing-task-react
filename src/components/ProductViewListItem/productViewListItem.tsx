@@ -5,6 +5,8 @@ interface IProductNameViewListItem {
   className?: string;
   type: ProductListItemType;
   preview: string;
+  onClick: (type: ProductListItemType, id: string) => void;
+  photoId: string;
 }
 
 export enum ProductListItemType {
@@ -12,9 +14,22 @@ export enum ProductListItemType {
   VIDEO = 'VIDEO',
 }
 
-const ProductViewListItem: FC<IProductNameViewListItem> = ({ className, type, preview }) => {
+const ProductViewListItem: FC<IProductNameViewListItem> = ({
+  className,
+  type,
+  preview,
+  onClick,
+  photoId,
+}) => {
   return (
-    <div className={`${ProductViewListItemStyles.productViewListItem} ${className}`}>
+    <div
+      className={`${ProductViewListItemStyles.productViewListItem} ${className}`}
+      onClick={(e: React.MouseEvent<HTMLElement>) => {
+        e.preventDefault();
+        e.stopPropagation();
+        onClick(type, String(photoId));
+      }}
+    >
       <img className={ProductViewListItemStyles.image} src={preview} alt={''} draggable={false} />
       {type === ProductListItemType.VIDEO ? (
         <div className={ProductViewListItemStyles.videoButtonWrapper}>

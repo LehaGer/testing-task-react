@@ -1,0 +1,40 @@
+.salesStats {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Gilroy', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #B0AFAB;
+
+  & .boughtAmount {
+
+  }
+
+  & .divider {
+    width: 0;
+    height: 13.5px;
+
+    border: 1px solid #B0AFAB;
+    margin: 0 12px;
+  }
+
+  & .inBucketAmount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      margin: 4px;
+    }
+  }
+}
