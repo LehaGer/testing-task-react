@@ -1,0 +1,71 @@
+.productDescription {
+  //width: 583px;
+  //height: 1401px;
+  //border: #b0aba5 1px dashed;
+  position: relative;
+
+  & .salesStats {
+    position: relative;
+    width: max-content;
+    left: 0;
+    top: 0;
+  }
+
+  & .goToButtonsWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0;
+  }
+
+  & .goToVideoBtn,
+  & .goToCommentBtn {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  & .price {}
+
+  & .sizes {
+    background-color: #4F6F9F;
+    width: 100%;
+    height: 67px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+  & .heights {
+    background-color: #4F6F9F;
+    width: 378px;
+    height: 67px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  & .deadline {
+    background-color: #4F6F9F;
+    width: 117px;
+    height: 19px;
+    margin-bottom: 24px;
+  }
+  & .controlButtons {
+    background-color: #4F6F9F;
+    width: 80%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  & .delivery {
+    background-color: #4F6F9F;
+    width: 378px;
+    height: 123px;
+    margin-bottom: 20.92px;
+  }
+  & .colors {
+    background-color: #4F6F9F;
+    width: 144px;
+    height: 122.75px;
+    margin-bottom: 32px;
+  }
+  & .description {
+    background-color: #4F6F9F;
+    width: 582px;
+    height: 473.33px;
+  }
+}

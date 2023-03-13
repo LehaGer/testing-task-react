@@ -1,0 +1,64 @@
+.productPage {
+
+  //width: max-content;
+  margin: 27px auto 69px auto;
+
+  display: grid;
+  grid-template-rows: max-content max-content max-content 1fr max-content;
+  justify-content: center;
+  align-items: start;
+  column-gap: 20px;
+
+  & .head {
+    grid-area: 1 / 1 / 2 / 3;
+    align-self: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 20px;
+
+    & .backButton {}
+
+    & .productName {}
+  }
+
+  & .productView {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: end;
+  }
+
+  & .productDescription {
+    grid-area: 2 / 2 / 5 / 3;
+  }
+
+  & .marketInfo {
+    grid-area: 3 / 1 / 4 / 2;
+    align-self: start;
+    justify-self: end;
+    width: 446px;
+    height: 96.08px;
+    background-color: #4F6F9F;
+    margin: 7px 0 26.92px 0;
+  }
+
+  & .recommendations {
+    grid-area: 4 / 1 / 5 / 2;
+    align-self: start;
+    justify-self: end;
+  }
+
+
+}
+
+.loadInfo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}

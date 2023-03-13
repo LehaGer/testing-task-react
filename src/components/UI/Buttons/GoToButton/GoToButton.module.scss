@@ -1,0 +1,57 @@
+.goToButton {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 213px;
+  height: 42px;
+
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  & > img {
+    fill: #BD9365;
+  }
+
+  & .amount {
+    font-family: 'Gilroy', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-right: 2px;
+
+    color: #BD9365;
+  }
+
+  & .name {
+    font-family: 'Gilroy', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+
+    color: #282828;
+  }
+}
+

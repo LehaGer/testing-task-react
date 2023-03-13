@@ -1,0 +1,245 @@
+.price {
+
+  & .retail {
+    background: #282828;
+    border-radius: 6px;
+
+    font-family: 'Gilroy', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    padding: 5px 14px;
+  }
+
+  & .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    & .countingSection {
+      width: 190px;
+      margin: 7px 32px 10px 12px;
+
+      & .pricePart {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 8px;
+
+        & .pricePartCurrent {
+          font-family: 'Gilroy', serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 45px;
+          line-height: 55px;
+
+          color: #BD9365;
+          margin-bottom: auto;
+          margin-right: 9px;
+          white-space: nowrap;
+        }
+
+        & .pricePartOld {
+          font-family: 'Gilroy', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration-line: line-through;
+
+          color: #B0AFAB;
+          white-space: nowrap;
+        }
+      }
+
+      & .discountSection {
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        & .discountTitle {
+          font-family: 'Gilroy', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+
+          color: #8B123B;
+          margin-right: 4px;
+          white-space: nowrap;
+        }
+
+        & .discountDescription {
+          font-family: 'Gilroy', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+
+          color: #B0AFAB;
+
+          white-space: nowrap;
+        }
+
+      }
+
+    }
+
+    & .coupon {
+
+      //width: 559px;
+      height: 120px;
+      background: #FAF1E8;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      border-radius: 5px;
+      overflow: hidden;
+
+      & .leftPart {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 7px 16px;
+
+        & .title {
+          font-family: 'Gilroy', serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+
+          text-transform: uppercase;
+
+          color: #282828;
+
+          margin: 7px 5px 5px 0;
+        }
+
+        & .description {
+          font-family: 'Gilroy', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+
+          color: #282828;
+
+        }
+
+        & .timerWrapper {
+
+          margin-top: auto;
+
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          & .clock {
+            margin-right: 4.11px;
+          }
+
+          & .timer {
+            font-family: 'Gilroy', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+
+            color: #282828;
+          }
+        }
+      }
+
+      & .divider {
+        width: 5.18px;
+        object-fit: cover;
+      }
+
+      & .rightPart {
+        font-family: 'Gilroy', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 74px;
+        text-transform: uppercase;
+
+        color: #282828;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 22px;
+      }
+
+    }
+  }
+
+  & .wholeSale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin-top: 6px;
+
+    & .wholeSalePrice {
+      font-family: 'Gilroy', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+
+      color: #282828;
+
+      margin-right: 8px;
+    }
+
+    & .questionSymbol {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+
+      background: #BD9365;
+
+      font-family: 'Gilroy', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+
+    }
+  }
+
+}

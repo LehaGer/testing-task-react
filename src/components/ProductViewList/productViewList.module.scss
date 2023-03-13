@@ -1,0 +1,42 @@
+.productViewList {
+  width: 563px;
+  height: 681px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  & .button {
+
+  }
+
+  & .scrollAreaWrapper {
+    overflow: hidden;
+    height: 633px;
+    width: 97px;
+    position: relative;
+
+    & .scrollArea {
+
+      position: absolute;
+      top: 0;
+      transition: all ease-in-out .5s;
+
+      & .item {
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+  }
+
+
+  }
+
+
+}
