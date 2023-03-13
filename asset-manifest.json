@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testing-task-react/static/css/main.c06c09eb.css",
-    "main.js": "/testing-task-react/static/js/main.9391b8fb.js",
+    "main.css": "/testing-task-react/static/css/main.9b519d71.css",
+    "main.js": "/testing-task-react/static/js/main.9cd02fa4.js",
     "static/media/Gilroy-Medium.woff": "/testing-task-react/static/media/Gilroy-Medium.5329bc502cdc219ad294.woff",
     "static/media/share.svg": "/testing-task-react/static/media/share.d1df1d1661546ba110c0c90aa292d13a.svg",
     "static/media/downloadsvg.svg": "/testing-task-react/static/media/downloadsvg.e45a9987e0c5eca312b45a3e53991c24.svg",
@@ -17,11 +17,11 @@
     "static/media/clock.svg": "/testing-task-react/static/media/clock.513c630858a7e7ed81d47df2c1932efa.svg",
     "static/media/play-button.svg": "/testing-task-react/static/media/play-button.aea903d4df826ef89fd7.svg",
     "static/media/right-bottom-rectangle.svg": "/testing-task-react/static/media/right-bottom-rectangle.5c930c38764ecf6e6901f98e3f4947fd.svg",
-    "main.c06c09eb.css.map": "/testing-task-react/static/css/main.c06c09eb.css.map",
-    "main.9391b8fb.js.map": "/testing-task-react/static/js/main.9391b8fb.js.map"
+    "main.9b519d71.css.map": "/testing-task-react/static/css/main.9b519d71.css.map",
+    "main.9cd02fa4.js.map": "/testing-task-react/static/js/main.9cd02fa4.js.map"
   },
   "entrypoints": [
-    "static/css/main.c06c09eb.css",
-    "static/js/main.9391b8fb.js"
+    "static/css/main.9b519d71.css",
+    "static/js/main.9cd02fa4.js"
   ]
 }
