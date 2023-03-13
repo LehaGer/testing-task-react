@@ -1,11 +1,6 @@
 import React, { FC } from 'react';
 import UpBtnStyles from './UpButton.module.scss';
-
-interface IUpButtonProps {
-  onClick?: (e: React.MouseEvent) => void;
-  isActive: boolean;
-  className?: string;
-}
+import { IUpButtonProps } from '../../../../types';
 
 const UpButton: FC<IUpButtonProps> = ({ onClick, isActive, className }) => {
   const onClickResultEvent = isActive

@@ -1,11 +1,7 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import RightBottomLabelStyles from './RightBottomLabel.module.scss';
 import RightBottomRectangle from 'assets/right-bottom-rectangle.svg';
-
-interface IRightBottomLabel {
-  className?: string;
-  children?: ReactNode;
-}
+import { IRightBottomLabel } from '../../../types';
 
 const RightBottomLabel: FC<IRightBottomLabel> = ({ className, children }) => {
   return (

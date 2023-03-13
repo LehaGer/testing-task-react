@@ -1,13 +1,8 @@
 import React, { FC, useState } from 'react';
 import PriceStyles from './Price.module.scss';
-import { IProductInfo } from '../../types';
+import { IPriceProps } from '../../types';
 import clockImg from 'assets/clock.svg';
 import dividerImg from 'assets/devider.svg';
-
-interface IPriceProps {
-  data: Pick<IProductInfo, 'price' | 'promocode'>;
-  className: string;
-}
 
 const Price: FC<IPriceProps> = ({ data, className }) => {
   const { price, promocode } = data;

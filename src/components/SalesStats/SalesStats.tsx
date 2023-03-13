@@ -1,12 +1,7 @@
 import React, { FC } from 'react';
 import SalesStatsStyles from './SalesStats.module.scss';
 import bucketImage from 'assets/bucket.svg';
-
-interface ISalesStats {
-  className?: string;
-  boughtAmount: number;
-  inBucketAmount: number;
-}
+import { ISalesStats } from '../../types';
 
 const SalesStats: FC<ISalesStats> = ({ className, boughtAmount, inBucketAmount }) => {
   return (

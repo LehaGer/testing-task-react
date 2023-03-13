@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios, { AxiosError } from 'axios';
+import { IProductQueryAttributes } from '../types';
 
 const {
   REACT_APP_SOURCE_URL: SOURCE_URL,
@@ -8,10 +9,6 @@ const {
   REACT_APP_SOURCE_URL_HEADER_ACCEPT: SOURCE_URL_HEADER_ACCEPT,
   REACT_APP_SOURCE_URL_HEADER_CONTENT_TYPE: SOURCE_URL_HEADER_CONTENT_TYPE,
 } = process.env;
-
-export interface IProductQueryAttributes {
-  productId: string;
-}
 
 export default class ProductService {
   static getProductInfo = createAsyncThunk(

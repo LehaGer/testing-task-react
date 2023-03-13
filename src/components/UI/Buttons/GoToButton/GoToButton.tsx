@@ -1,12 +1,6 @@
 import React, { FC } from 'react';
 import GoToButtonStyles from './GoToButton.module.scss';
-
-interface IGoToButtonProps {
-  className?: string;
-  icon: string;
-  name: string;
-  amount: number;
-}
+import { IGoToButtonProps } from '../../../../types';
 
 const GoToButton: FC<IGoToButtonProps> = ({ className, icon, name, amount }) => {
   return (

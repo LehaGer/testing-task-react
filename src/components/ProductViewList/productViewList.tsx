@@ -2,17 +2,11 @@ import React, { FC, useState } from 'react';
 import ProductViewListStyles from './productViewList.module.scss';
 import UpButton from '../UI/Buttons/UpButton/UpButton';
 import DownButton from '../UI/Buttons/DownButton/DownButton';
-import ProductViewListItem, {
-  ProductListItemType,
-} from '../ProductViewListItem/productViewListItem';
-import { IProductInfo } from '../../types';
+
+import { IProductNameViewList, ProductListItemType } from '../../types';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { currentImageSlice } from '../../store/reducers/currentImageSlice';
-
-interface IProductNameViewList {
-  data: Pick<IProductInfo, 'photos' | 'videos'>;
-  className?: string;
-}
+import ProductViewListItem from '../ProductViewListItem/productViewListItem';
 
 const ProductViewList: FC<IProductNameViewList> = ({ className, data }) => {
   const { photos, videos } = data;

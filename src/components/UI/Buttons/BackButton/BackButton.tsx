@@ -1,9 +1,6 @@
 import React, { FC } from 'react';
 import BackBtnStyles from './BackButton.module.scss';
-
-interface IBackButtonProps {
-  className?: string;
-}
+import { IBackButtonProps } from '../../../../types';
 
 const BackButton: FC<IBackButtonProps> = (props) => {
   return (

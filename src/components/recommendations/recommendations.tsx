@@ -1,9 +1,6 @@
 import React, { FC } from 'react';
 import RecommendationsStyles from './recommendations.module.scss';
-
-interface IRecommendationsProps {
-  className: string;
-}
+import { IRecommendationsProps } from '../../types';
 
 const Recommendations: FC<IRecommendationsProps> = ({ className }) => {
   return <div className={`${RecommendationsStyles.recommendations} ${className}`}></div>;

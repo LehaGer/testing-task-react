@@ -1,3 +1,5 @@
+import React, { ReactNode } from 'react';
+
 export interface IPromocodeInfo {
   name: string;
   slug: string;
@@ -146,4 +148,98 @@ export interface IProductInfo {
 export interface IProductInfoRowResult {
   data: IProductInfo;
   message: string;
+}
+
+export interface IProductQueryAttributes {
+  productId: string;
+}
+
+export interface IAppProviderProps {
+  children?: ReactNode;
+}
+
+export interface IGoToCommentButtonProps {
+  className?: string;
+  amount: number;
+}
+
+export interface IGoToCommentButtonProps {
+  className?: string;
+  amount: number;
+}
+
+export interface IPriceProps {
+  data: Pick<IProductInfo, 'price' | 'promocode'>;
+  className?: string;
+}
+
+export interface IProductDescriptionProps {
+  className?: string;
+  data: IProductInfo;
+}
+
+export interface IProductNameProps {
+  name: string;
+  className?: string;
+}
+
+export interface IProductNameView {
+  data: Pick<IProductInfo, 'photos' | 'videos' | 'isNew' | 'promocode'>;
+  className?: string;
+}
+
+export interface IProductNameViewList {
+  data: Pick<IProductInfo, 'photos' | 'videos'>;
+  className?: string;
+}
+
+export interface IProductNameViewListItem {
+  className?: string;
+  type: ProductListItemType;
+  preview: string;
+  onClick: (type: ProductListItemType, id: string) => void;
+  photoId: string;
+}
+
+export interface IRecommendationsProps {
+  className?: string;
+}
+
+export interface ISalesStats {
+  className?: string;
+  boughtAmount: number;
+  inBucketAmount: number;
+}
+
+export interface IBackButtonProps {
+  className?: string;
+}
+
+export interface IDownButtonProps {
+  isActive: boolean;
+  onClick: (e: React.MouseEvent) => void;
+  className?: string;
+}
+
+export interface IGoToButtonProps {
+  className?: string;
+  icon: string;
+  name: string;
+  amount: number;
+}
+
+export interface IUpButtonProps {
+  onClick?: (e: React.MouseEvent) => void;
+  isActive: boolean;
+  className?: string;
+}
+
+export interface IRightBottomLabel {
+  className?: string;
+  children?: ReactNode;
+}
+
+export enum ProductListItemType {
+  PHOTO = 'PHOTO',
+  VIDEO = 'VIDEO',
 }

@@ -1,11 +1,6 @@
 import React, { FC } from 'react';
 import DownBtnStyles from './DownButton.module.scss';
-
-interface IDownButtonProps {
-  isActive: boolean;
-  onClick: (e: React.MouseEvent) => void;
-  className?: string;
-}
+import { IDownButtonProps } from '../../../../types';
 
 const DownButton: FC<IDownButtonProps> = ({ onClick, isActive, className }) => {
   const onClickResultEvent = isActive

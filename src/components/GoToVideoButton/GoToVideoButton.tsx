@@ -1,11 +1,7 @@
 import React, { FC } from 'react';
 import GoToButton from '../UI/Buttons/GoToButton/GoToButton';
 import videoImg from 'assets/video.svg';
-
-interface IGoToCommentButtonProps {
-  className?: string;
-  amount: number;
-}
+import { IGoToCommentButtonProps } from '../../types';
 
 const GoToVideoButton: FC<IGoToCommentButtonProps> = ({ className, amount }) => {
   return (

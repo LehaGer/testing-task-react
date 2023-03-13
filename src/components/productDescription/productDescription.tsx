@@ -3,13 +3,8 @@ import ProductDescriptionStyles from './productDescription.module.scss';
 import SalesStats from '../SalesStats/SalesStats';
 import GoToVideoButton from '../GoToVideoButton/GoToVideoButton';
 import GoToCommentButton from '../GoToCommentButton/GoToCommentButton';
-import { IProductInfo } from '../../types';
+import { IProductDescriptionProps } from '../../types';
 import Price from '../Price/Price';
-
-interface IProductDescriptionProps {
-  className: string;
-  data: IProductInfo;
-}
 
 const ProductDescription: FC<IProductDescriptionProps> = ({ className, data }) => {
   return (
@@ -33,6 +28,13 @@ const ProductDescription: FC<IProductDescriptionProps> = ({ className, data }) =
         data={{ price: data.price, promocode: data.promocode }}
         className={ProductDescriptionStyles.price}
       />
+      <div className={ProductDescriptionStyles.sizes}></div>
+      <div className={ProductDescriptionStyles.heights}></div>
+      <div className={ProductDescriptionStyles.deadline}></div>
+      <div className={ProductDescriptionStyles.controlButtons}></div>
+      <div className={ProductDescriptionStyles.delivery}></div>
+      <div className={ProductDescriptionStyles.colors}></div>
+      <div className={ProductDescriptionStyles.description}></div>
     </div>
   );
 };

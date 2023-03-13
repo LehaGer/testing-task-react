@@ -1,11 +1,7 @@
 import React, { FC } from 'react';
 import GoToButton from '../UI/Buttons/GoToButton/GoToButton';
 import commentImg from 'assets/message.svg';
-
-interface IGoToCommentButtonProps {
-  className?: string;
-  amount: number;
-}
+import { IGoToCommentButtonProps } from '../../types';
 
 const GoToCommentButton: FC<IGoToCommentButtonProps> = ({ className, amount }) => {
   return (

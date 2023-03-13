@@ -5,13 +5,8 @@ import shareBtnImg from 'assets/share.svg';
 import likeBtnImg from 'assets/like.svg';
 import downloadBtnImg from 'assets/downloadsvg.svg';
 import RightBottomLabel from '../UI/RightBottomLabel/RightBottomLabel';
-import { IProductInfo } from '../../types';
+import { IProductNameView } from '../../types';
 import { useAppSelector } from '../../hooks/redux';
-
-interface IProductNameView {
-  data: Pick<IProductInfo, 'photos' | 'videos' | 'isNew' | 'promocode'>;
-  className?: string;
-}
 
 const ProductView: FC<IProductNameView> = ({ className, data }) => {
   const { photos, videos, isNew, promocode } = data;

@@ -1,18 +1,6 @@
 import React, { FC } from 'react';
 import ProductViewListItemStyles from './productViewListItem.module.scss';
-
-interface IProductNameViewListItem {
-  className?: string;
-  type: ProductListItemType;
-  preview: string;
-  onClick: (type: ProductListItemType, id: string) => void;
-  photoId: string;
-}
-
-export enum ProductListItemType {
-  PHOTO = 'PHOTO',
-  VIDEO = 'VIDEO',
-}
+import { IProductNameViewListItem, ProductListItemType } from '../../types';
 
 const ProductViewListItem: FC<IProductNameViewListItem> = ({
   className,
