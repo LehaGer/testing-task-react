@@ -3,12 +3,15 @@ import ProductDescriptionStyles from './productDescription.module.scss';
 import SalesStats from '../SalesStats/SalesStats';
 import GoToVideoButton from '../GoToVideoButton/GoToVideoButton';
 import GoToCommentButton from '../GoToCommentButton/GoToCommentButton';
+import { IProductInfo } from '../../types';
+import Price from '../Price/Price';
 
 interface IProductDescriptionProps {
   className: string;
+  data: IProductInfo;
 }
 
-const ProductDescription: FC<IProductDescriptionProps> = ({ className }) => {
+const ProductDescription: FC<IProductDescriptionProps> = ({ className, data }) => {
   return (
     <div className={`${ProductDescriptionStyles.productDescription} ${className}`}>
       <SalesStats
@@ -17,9 +20,19 @@ const ProductDescription: FC<IProductDescriptionProps> = ({ className }) => {
         className={ProductDescriptionStyles.salesStats}
       ></SalesStats>
       <div className={ProductDescriptionStyles.goToButtonsWrapper}>
-        <GoToVideoButton className={ProductDescriptionStyles.goToVideoBtn} amount={19} />
-        <GoToCommentButton className={ProductDescriptionStyles.goToCommentBtn} amount={20} />
+        <GoToVideoButton
+          className={ProductDescriptionStyles.goToVideoBtn}
+          amount={data.reviewsCount}
+        />
+        <GoToCommentButton
+          className={ProductDescriptionStyles.goToCommentBtn}
+          amount={data.questionsCount}
+        />
       </div>
+      <Price
+        data={{ price: data.price, promocode: data.promocode }}
+        className={ProductDescriptionStyles.price}
+      />
     </div>
   );
 };
